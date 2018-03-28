@@ -19,7 +19,7 @@ public class HomePage {
 	 
 	 @FindBy(xpath="html/body/div[1]/div/div/ul[2]/li[2]/div/ul/li[1]/a")
 	 WebElement editProfile;
-	
+	//nirakar panda
 	 public void clickOnProfile(){
 		 editProfile.click();
 	 }
