@@ -11,15 +11,15 @@ public class LoginPom {
 	@FindBy(xpath=".//*[@id='login_Layer']")
 	//@FindBy(css="input#usernameField")
 	WebElement loginBtn;
-	@FindBy(xpath=".//*[@id='eLogin']")
+	@FindBy(css="#eLoginNew")
 	//@FindBy(css="input#usernameField")
 	WebElement email;
 
-	@FindBy(xpath = ".//*[@id='pLogin']")
+	@FindBy(xpath = ".//input[@id='pLogin']")
 	//@FindBy(css="input#passwordField")
 	WebElement password;
 
-	@FindBy(xpath = ".//*[@id='lgnFrm']/div[8]/button")
+	@FindBy(xpath = ".//*[@id='lgnFrmNew']/div[9]/button")
 	WebElement login;
 
 	public LoginPom(WebDriver Idriver) {

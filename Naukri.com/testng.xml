@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="projectOne">
+<test name="sanity">
+<classes>
+<class name="com.nirakar.script.LoginPage"/>
+<class name="com.nirakar.script.TestClass"/>
+</classes>
+</test>
+
+
+</suite>

@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -26,13 +27,13 @@ public WebDriver driver;
 			  // If the browser is Firefox, then do this
 			
 			 
-				// System.setProperty("webdriver.gecko.driver", "E:\\SOfT\\java\\JarFiles\\selenium\\geckodriver.exe");        
+				//System.setProperty("webdriver.gecko.driver", "E:\\SOfT\\java\\JarFiles\\selenium\\geckodriver.exe");        
 				     
 					//WebDriver driver = new FirefoxDriver();
 				
-				//  driver = new FirefoxDriver();
+				 // driver = new FirefoxDriver();
 				  System.out.println("after firefox");
-				//  driver.get("https://login.naukri.com/nLogin/Login.php");
+				 //driver.get("https://login.naukri.com/nLogin/Login.php");
 			 
 			  
 			 
@@ -46,11 +47,14 @@ public WebDriver driver;
 					
 			               driver=new ChromeDriver();
 					//driver = new FirefoxDriver();
-			                
-			               driver.get("https://www.naukri.com");
-			 
-	 
-   	
+			           	driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
+			            //   driver.get("https://www.naukri.com");
+			               driver.get("https://www.google.com");
+	     String title= driver.getTitle();
+	     System.out.println(title);
+   	Assert.assertTrue(title.equals("Google"));
+   
+   	System.out.println("helloprint.......................................................................");
        //Create Login Page object
 			//  driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
       		driver.manage().window().maximize();

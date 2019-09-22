@@ -25,6 +25,7 @@ public class LoginPage extends BaseClase {
 		 loginPom = new LoginPom(driver);
 		loginPom.clickLoginLink();
 		loginPom.loginNaukri("nirakarpanda@hotmail.com", "Bhagirathi143");
+	
 		
 		
 	}
