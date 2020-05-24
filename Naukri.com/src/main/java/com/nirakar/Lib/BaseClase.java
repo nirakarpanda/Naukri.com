@@ -76,7 +76,7 @@ public WebDriver driver;
 	}
 	
 	public void testConflict(){
-		String sr="Remote change";
+		String sr="Remote change for test";
 	}
 	@AfterClass
 	public void closeApplication()
