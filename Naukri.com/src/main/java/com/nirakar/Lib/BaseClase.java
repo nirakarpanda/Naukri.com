@@ -43,7 +43,7 @@ public WebDriver driver;
 				 //driver.get("https://login.naukri.com/nLogin/Login.php");
 			 
 			  
-			 
+		
 			
 			 
 				  // Here I am setting up the path for my IEDriver
@@ -75,7 +75,9 @@ public WebDriver driver;
 		Reporter.log("=====Application Started=====", true);
 	}
 	
-	
+	public void testConflict(){
+		String sr="ten";
+	}
 	@AfterClass
 	public void closeApplication()
 	{
