@@ -1,4 +1,4 @@
-package com.nirakar.Lib;
+tepackage com.nirakar.Lib;
 
 import java.util.concurrent.TimeUnit;
 
@@ -76,7 +76,7 @@ public WebDriver driver;
 	}
 	
 	public void testConflict(){
-		String sr="ten";
+		String sr="Remote change";
 	}
 	@AfterClass
 	public void closeApplication()
