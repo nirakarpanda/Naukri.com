@@ -26,8 +26,13 @@ public WebDriver driver;
 			int a=7;
 		
 			  // If the browser is Firefox, then do this
+
 			System.out.println("Nirakar");
 			 
+
+			
+			 String str="Jitunu cnflict check";
+
 				//System.setProperty("webdriver.gecko.driver", "E:\\SOfT\\java\\JarFiles\\selenium\\geckodriver.exe");        
 				     
 					//WebDriver driver = new FirefoxDriver();
