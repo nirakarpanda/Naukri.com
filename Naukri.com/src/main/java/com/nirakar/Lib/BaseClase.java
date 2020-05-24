@@ -23,9 +23,10 @@ public WebDriver driver;
 	//public void OpenBrowser()
 	{
 		
-			 System.out.println("loading");
+			int a=7;
+		
 			  // If the browser is Firefox, then do this
-			
+			System.out.println("Nirakar");
 			 
 				//System.setProperty("webdriver.gecko.driver", "E:\\SOfT\\java\\JarFiles\\selenium\\geckodriver.exe");        
 				     
